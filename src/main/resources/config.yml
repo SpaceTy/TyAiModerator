@@ -1,0 +1,38 @@
+# TyAIModerator Configuration
+
+# General Settings
+settings:
+  # Enable debug logging
+  debug: false
+  # Language for messages (future support for multiple languages)
+  language: 'en'
+
+# Moderation Settings
+moderation:
+  # Enable chat moderation
+  chat_moderation: true
+  # Enable command moderation
+  command_moderation: true
+  # Minimum confidence score for AI detection (0.0 - 1.0)
+  confidence_threshold: 0.85
+
+# Action Settings
+actions:
+  # Actions to take when violations are detected
+  warning:
+    enabled: true
+    threshold: 3  # Number of warnings before taking action
+  mute:
+    enabled: true
+    duration: 300  # Duration in seconds (5 minutes)
+  kick:
+    enabled: true
+  ban:
+    enabled: false  # Disabled by default for safety
+
+# Notification Settings
+notifications:
+  # Staff notification settings
+  staff:
+    notify_on_detection: true
+    notify_on_action: true 

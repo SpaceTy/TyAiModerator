@@ -1,0 +1,14 @@
+name: TyAIModerator
+version: 0.1
+main: dev.spacety.tyaimoderator.TyAIModerator
+api-version: 1.21
+author: SpaceTy
+description: An AI-powered moderation plugin for Minecraft servers.
+
+commands:
+  tyai:
+    description: Access TyAIModerator commands
+    usage: /tyai
+    permission: tyai.admin
+    permission-message: You do not have permission to use this command.
+    aliases: [moderator, aimoderator, aimod]
